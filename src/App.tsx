@@ -9,7 +9,16 @@ import Home from './pages/Home'
 import Store from './pages/Store'
 import Footer from './components/Footer'
 import Toolbar from '@mui/material/Toolbar';
-
+import MainFeaturedPost from "./components/backgroundImg"
+import BI from "./images/backgroundImg.jpg"
+const mainFeaturedPost = {
+  title: 'Title of a longer featured blog post',
+  description:
+    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+  image: BI,
+  imageText: 'main image description',
+  linkText: 'Continue reading…',
+};
 
 
 function App() {
@@ -28,6 +37,8 @@ function App() {
       {/* <div className="App">
         Hello World
       </div> */}
+
+      <MainFeaturedPost post={mainFeaturedPost} />
       <Toolbar style={{ backgroundColor: "grey", justifyContent: "Center", position: "static", height: "50px", color: "white"}}>
       <Footer />
       </Toolbar>
