@@ -53,6 +53,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
               position: 'relative',
               p: { xs: 3, md: 6 },
               pr: { md: 0 },
+              height: "30em"
             }}
           >
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
