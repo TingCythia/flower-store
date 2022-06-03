@@ -28,7 +28,7 @@ function App() {
       {/* <div className="App">
         Hello World
       </div> */}
-      <Toolbar style={{ backgroundColor: "grey", justifyContent: "Center", position: "static", height: "50px", color: "white"}}>
+      <Toolbar >
       <Footer />
       </Toolbar>
     </Router>
