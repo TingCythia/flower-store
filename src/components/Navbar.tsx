@@ -2,7 +2,6 @@ import { CSSProperties, FC } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { Link } from 'react-router-dom';
@@ -10,29 +9,35 @@ import { Link } from 'react-router-dom';
 interface Props {}
 
 const headerDiv: CSSProperties = {
-    display: "inline-flex",
-    alignItems: "flex-end",
-    flexWrap: "wrap"
+display:'flex',
+justifyContent:'center',
+flex:"wrap"
 }
 
+const headerText: CSSProperties = {
+  display:'flex',
+  flex:"wrap",
+  fontSize:"3rem",
+  minWidth:"300px"
+  }
+
 const headerItem: CSSProperties = {
+    display: "flex",
     fontSize: '1.7em',
     margin: 0,
     padding: 0,
-    alignItems: 'center',
     cursor: 'pointer',
     textDecoration: "none",
     color: "#ffffff",
-    alignContent: "center",
-    display: "inline-flex",
     flexDirection: "row",
+    justifyContent:"center"
 };
 
 const Navbar: FC<Props> = (props) => {
   return (
     <Box sx={{ flexGrow: 1}}>
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="static" >
+      <Toolbar style={headerDiv}>
         <IconButton
           size="large"
           edge="start"
@@ -41,15 +46,15 @@ const Navbar: FC<Props> = (props) => {
           sx={{ mr: 2 }}
         >
 
-<div className="links">
+<div className="links" >
             {/* Header */}
-            <div className="header">
+            <div className="header" >
             <Link to="/" style={headerItem}>
-            <h3>The Flower Store</h3>
+            <h3 style={headerText}>The Flower Store</h3>
             </Link>
             </div>
            {/*  Meny  */}
-            <div className="links-style" style={headerDiv}>
+            <div className="links-style" style={headerItem}>
         <Link to="/" style={headerItem}><Button color="inherit">Home</Button></Link>
         <Link to="/About" style={headerItem}><Button color="inherit">About</Button></Link>
         <Link to="/Store" style={headerItem}><Button color="inherit">Store</Button></Link>
