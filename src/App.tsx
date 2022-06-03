@@ -1,45 +1,41 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from './pages/About'
+import Cart from './pages/Cart'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Store from './pages/Store'
+import Footer from './components/Footer'
+import Toolbar from '@mui/material/Toolbar';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="About" element={<About />} />
+        <Route path="Cart" element={<Cart />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Store" element={<Store />} />
+      </Routes>
+      {/* <div className="App">
+        Hello World
+      </div> */}
+      <Toolbar style={{ backgroundColor: "grey", justifyContent: "Center", position: "static", height: "50px", color: "white"}}>
+      <Footer />
+      </Toolbar>
+    </Router>
+
+
+    
+  );
 }
 
 export default App
