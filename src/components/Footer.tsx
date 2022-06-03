@@ -1,7 +1,6 @@
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
 import { CSSProperties } from '@material-ui/core/styles/withStyles'
 
 const footerStyle: CSSProperties = {
@@ -21,14 +20,7 @@ export default function Footer() {
         <Container maxWidth="lg">
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
-             {/*  <Box borderBottom={1}>Help</Box>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Account</Box>
-              
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Messages</Box> */}
+             
              
               
             </Grid>
