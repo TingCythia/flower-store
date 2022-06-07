@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CateType from './categoryList';
 import { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     gridContainer: {
@@ -21,10 +22,7 @@ const cardStyle: CSSProperties = {
     marginLeft: "auto",
     marginRight:"auto"
 }
-/* for (var _i = 0; _i < CateType.length; _i++) {
-    var num = CateType[_i];
-    console.log(num);
-} */
+
          
 export default function ImgMediaCard () {
     const classes = useStyles();
@@ -52,6 +50,8 @@ export default function ImgMediaCard () {
        {CateType[0].description}
        </Typography>
         </CardContent>
+        <Link to="/Store" ><Button>Check Products </Button></Link>
+       
        </Card>
        </Grid>
 
@@ -71,6 +71,7 @@ export default function ImgMediaCard () {
        {CateType[1].description}
        </Typography>
         </CardContent>
+        <Link to="/Store" ><Button>Check Products </Button></Link>
        </Card>
        </Grid>
 
@@ -90,6 +91,7 @@ export default function ImgMediaCard () {
        {CateType[2].description}
        </Typography>
         </CardContent>
+        <Link to="/Store" ><Button>Check Products </Button></Link>
        </Card>
        </Grid>
    </Grid>
