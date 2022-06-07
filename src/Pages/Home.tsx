@@ -18,9 +18,9 @@ const mainFeaturedPost = {
 
 const Home = () => {
   return (
-<MainFeaturedPost post={mainFeaturedPost} />
-
-
+    <><MainFeaturedPost post={mainFeaturedPost} />
+    <ImgMediaCard />
+    </>
   )
 }
 
