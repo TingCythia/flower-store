@@ -2,6 +2,8 @@ import React from 'react'
 import { CSSProperties } from '@material-ui/core/styles/withStyles'
 import MainFeaturedPost from "../components/backgroundImg"
 import BI from "../images/backgroundImg.jpg"
+import ImgMediaCard from '../components/categoryCard'
+
 
 
 
@@ -17,6 +19,8 @@ const mainFeaturedPost = {
 const Home = () => {
   return (
 <MainFeaturedPost post={mainFeaturedPost} />
+
+
   )
 }
 
