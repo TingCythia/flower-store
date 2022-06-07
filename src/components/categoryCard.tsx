@@ -10,11 +10,12 @@ import Typography from '@mui/material/Typography';
 import CateType from './categoryList';
 import { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
+import { bgcolor } from '@mui/system';
 
 const useStyles = makeStyles({
     gridContainer: {
-    justifyContent:"center"
-
+    justifyContent:"center",
+    background: "lightgrey"
     }
   });
 
