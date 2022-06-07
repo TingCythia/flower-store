@@ -28,7 +28,7 @@ function App() {
       {/* <div className="App">
         Hello World
       </div> */}
-      <Toolbar >
+
       <Footer />
       </Toolbar>
     </Router>
