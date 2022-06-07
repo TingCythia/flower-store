@@ -1,5 +1,5 @@
 import React from 'react'
-import { Products } from '../components/productList';
+
 import { CSSProperties } from '@material-ui/core/styles/withStyles'
 
 /* for eller map för listan */

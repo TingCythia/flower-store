@@ -9,7 +9,7 @@ import Home from './pages/Home'
 import Store from './pages/Store'
 import Footer from './components/Footer'
 import Toolbar from '@mui/material/Toolbar';
-
+import Products from './components/Products/Products'
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
+      <Products />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="About" element={<About />} />
@@ -28,6 +29,7 @@ function App() {
       {/* <div className="App">
         Hello World
       </div> */}
+
       <Toolbar style={{ backgroundColor: "grey", justifyContent: "Center", position: "static", height: "50px", color: "white"}}>
       <Footer />
       </Toolbar>
