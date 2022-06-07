@@ -30,7 +30,7 @@ function App() {
       </div> */}
 
       <Footer />
-      </Toolbar>
+    
     </Router>
 
 
