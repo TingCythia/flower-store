@@ -38,7 +38,7 @@ const Navbar: FC<Props> = (props) => {
 
     <>
     <Box sx={{ flexGrow: 1}}>
-    <AppBar position="static" >
+    <AppBar position="static" sx={{bgcolor: 'text.primary'}} >
       <Toolbar style={headerDiv}>
         <IconButton
           size="large"
