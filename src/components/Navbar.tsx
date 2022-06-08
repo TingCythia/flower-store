@@ -35,6 +35,8 @@ const headerItem: CSSProperties = {
 
 const Navbar: FC<Props> = (props) => {
   return (
+
+    <>
     <Box sx={{ flexGrow: 1}}>
     <AppBar position="static" sx={{bgcolor: 'text.primary'}} >
       <Toolbar style={headerDiv}>
@@ -44,7 +46,7 @@ const Navbar: FC<Props> = (props) => {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
-        >
+        >   </IconButton>
 
 <div className="links" >
             {/* Header */}
@@ -64,7 +66,7 @@ const Navbar: FC<Props> = (props) => {
         
         </div>
          {/*  <MenuIcon /> */}
-        </IconButton>
+     
         {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           News
         </Typography> */}
@@ -72,6 +74,7 @@ const Navbar: FC<Props> = (props) => {
       </Toolbar>
     </AppBar>
   </Box>
+    </>
   )
 }
 

@@ -9,15 +9,17 @@ import Home from './pages/Home'
 import Store from './pages/Store'
 import Footer from './components/Footer'
 import Toolbar from '@mui/material/Toolbar';
-
+import Products from './components/Products/Products'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
     <Router>
       <Navbar/>
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="About" element={<About />} />
@@ -32,6 +34,7 @@ function App() {
       <Footer />
     
     </Router>
+      </>
 
 
     
@@ -39,3 +42,5 @@ function App() {
 }
 
 export default App
+
+
