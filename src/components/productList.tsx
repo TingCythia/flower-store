@@ -2,8 +2,8 @@
 import LilyImage from '../image/LilyImage.jpg'
 import SunflowerImage from '../image/RosesImage.jpg'
 import TulipImage from '../image/SunflowerImage.jpg'
-import HibiscusImage from '../image/TulipImage.jpg'
- */
+import HibiscusImage from '../image/TulipImage.jpg' */
+
 
 /* export interface Products {
     id: number,
