@@ -10,11 +10,11 @@ const Store = () => {
   return (
     <>
 
-    <Products/>
-    <div style={boxStyle}><h3>Store page</h3></div>
-    <div style={boxStyle}>
-    <p>View products.</p>
-    </div>
+      <div style={boxStyle}><h3>Store page</h3>
+      </div>
+      <Products />
+      <div style={boxStyle}>
+      </div>
     </>
   )
 }
@@ -22,6 +22,7 @@ const Store = () => {
 const boxStyle: CSSProperties = {
   display: "flex",
   justifyContent: "center",
+  flexDirection: "column"
 }
 
 export default Store
