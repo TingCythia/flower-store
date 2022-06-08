@@ -5,7 +5,7 @@ import { CSSProperties } from '@material-ui/core/styles/withStyles'
 
 const footerStyle: CSSProperties = {
   backgroundColor: "grey",
-  borderTop: "1px solid #E7E7E7",
+  borderTop: "10px solid #E7E7E7",
   textAlign: "center",
   padding: "20px",
   position: "fixed",

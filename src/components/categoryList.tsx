@@ -1,53 +1,73 @@
-import {Categories} from "../types/CategoryType";
+import {Categories, product} from "../types/CategoryType";
 import Sunflower from "../images/SunflowerImage.jpg";
 import Ficus from "../images/Ficus Lyrata2.jpg";
 import Decor from "../images/Monstera Delociosa.jpg"
 
 
 
-const CateType : Categories []= 
+export const CateType : Categories []= 
 [    
     {
     id: 1,
     title: "Flowers",
     description: "Flowers Description",
-    image: Sunflower,
-    products: [
-    {
-        id: 1 ,
-        title: "Tulip Flower", 
-        description: "Beautiful flower 1",
-        price: "98 kr", 
-        image:Sunflower
-    },
-    {
-        id: 2 ,
-        title: "Tulip Flower", 
-        description: "Beautiful flower 1",
-        price: "98 kr", 
-        image:Sunflower
-    },
-    {
-        id: 3 ,
-        title: "Tulip Flower", 
-        description: "Beautiful flower 1",
-        price: "98 kr", 
-        image:Sunflower
-    },
-    ]
+    image: Sunflower
+  
     },
     {
     id:2,
     title: "Green Trees",
     description: "Trees Description",
-    image: Ficus,
-    products: [
+    image: Ficus
+  
+    },
+    {
+    id:3,
+    title: "Decorations ",
+    description: "DecorationsDescription",
+    image: Decor
+
+    },
+];
+
+export const ProductLists: product [] = 
+[
+        {
+            id: 1 ,
+            title: "Tulip Flower", 
+            description: "Beautiful flower 1",
+            price: "98 kr", 
+            image:Sunflower,
+            count:1,
+            isInCart:false
+        },
+        {
+            id: 2 ,
+            title: "Tulip Flower", 
+            description: "Beautiful flower 1",
+            price: "98 kr", 
+            image:Sunflower,
+            count:1,
+            isInCart:false
+        },
+        {
+            id: 3 ,
+            title: "Tulip Flower", 
+            description: "Beautiful flower 1",
+            price: "98 kr", 
+            image:Sunflower,
+            count:1,
+            isInCart:false
+        },
+
         {
             id: 4 ,
             title: "Tulip Flower", 
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Ficus,
+            count:1,
+            isInCart:false
         },
         {
             id: 5 ,
@@ -55,6 +75,8 @@ const CateType : Categories []=
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Ficus,
+            count:1,
+            isInCart:false
         },
         {
             id: 6 ,
@@ -62,21 +84,17 @@ const CateType : Categories []=
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Ficus,
+            count:1,
+            isInCart:false
         },
-        ]
-    },
-    {
-    id:3,
-    title: "Decorations ",
-    description: "DecorationsDescription",
-    image: Decor,
-    products: [
         {
             id: 7 ,
             title: "Tulip Flower", 
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Decor,
+            count:1,
+            isInCart:false
         },
         {
             id: 8 ,
@@ -84,6 +102,8 @@ const CateType : Categories []=
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Decor,
+            count:1,
+            isInCart:false
         },
         {
             id: 9 ,
@@ -91,10 +111,9 @@ const CateType : Categories []=
             description: "Beautiful flower 1",
             price: "98 kr", 
             image:Decor,
+            count:1,
+            isInCart:false,
         },
-        ]
-    },
-];
+      
+    ]
 
-
-export default CateType
