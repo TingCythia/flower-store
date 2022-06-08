@@ -2,10 +2,6 @@ import React from 'react'
 import Products from '../components/Products/Products'
 import { CSSProperties } from '@material-ui/core/styles/withStyles'
 
-/* for eller map för listan */
-
-/* console.log(Products); */
-
 const Store = () => {
   return (
     <>
