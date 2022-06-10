@@ -8,8 +8,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Store from './pages/Store'
 import Footer from './components/Footer'
-import Toolbar from '@mui/material/Toolbar';
-import Products from './components/Products/Products'
+import SingleProduct from './pages/singleProduct';
 
 
 function App() {
@@ -18,14 +17,14 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar/>
-      
+      <Navbar/>   
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="About" element={<About />} />
         <Route path="Cart" element={<Cart />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="Store" element={<Store />} />
+        <Route path=':id' element={<SingleProduct  />} />
       </Routes>
       {/* <div className="App">
         Hello World
