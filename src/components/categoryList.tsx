@@ -30,7 +30,7 @@ export const CateType : Categories []=
     },
 ];
 
-export const ProductLists: product [] = 
+export const productsData: product [] = 
 [
         {
             id: 1 ,

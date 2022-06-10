@@ -1,6 +1,9 @@
 import {FC}from 'react'
 import { CSSProperties } from 'react'
 import { product } from '../types/CategoryType';
+import {Link} from 'react-router-dom'
+import SingleProduct from './singleProduct';
+
 
 interface Props{
   item: product
@@ -10,6 +13,8 @@ const ProductList : FC<Props>= (props) => {
   const items = props
   return (
       <>
+      <Link to={`/${items.item.id}`}  /* onClick={() => SingleProduct()}  */ >
+      
       <main style={productCardStyle}>
       <div><img src={props.item.image} alt="" style={imageStyle}></img></div>
       <div style={textStyle}>
@@ -20,10 +25,8 @@ const ProductList : FC<Props>= (props) => {
         <div>
             <button style={buttonStyle}>Add to cart</button>
         </div>
-      
-    
       </main>
-   
+      </Link>
       </>
 
       )

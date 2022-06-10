@@ -1,22 +1,20 @@
 import React from 'react'
-import Products from '../components/Products/Products'
 import { CSSProperties } from '@material-ui/core/styles/withStyles'
 import ProductList  from './ProductList'
-import {ProductLists} from '../components/categoryList'
+import {productsData} from '../components/categoryList'
+import SingleProduct from './singleProduct';
+
 
 const Store = () => {
   return (
     <>
-
-      <div style={boxStyle}><h3>Store page</h3>
-      </div>
-      <Products />
-
-      <div style={boxStyle} >
-      {ProductLists.map((item)=>
-      <ProductList key={item.id} item={item} />
-      )}
-      </div>
+         <div style={boxStyle}><h3>Store page</h3></div>
+         <div style={boxStyle} >
+         {productsData.map((item)=>
+         <ProductList key={item.id} item={item} />
+         )}
+         </div>
+         <div><SingleProduct /></div>
     </>
   )
 }
