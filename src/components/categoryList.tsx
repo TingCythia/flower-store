@@ -1,10 +1,6 @@
 import {Categories, product} from "../types/CategoryType";
-import Sunflower from "../images/SunflowerImage.jpg";
 import Ficus from "../images/Ficus Lyrata2.jpg";
 import Decor from "../images/Monstera Delociosa.jpg";
-import Eternal from "../images/Eternal Roses.jpg";
-import Luxury from "../images/Luxury.jpg";
-import ParisRose from "../images/Paris En Rose.jpg";
 import Coco from "../images/Coco Fiori.jpg";
 import Bevess from "../images/Bevess.jpg";
 import Chic from "../images/ChicFlower.jpg";
@@ -82,7 +78,7 @@ export const productsData: product [] =
         {
             id: 5 ,
             title: "Bougainvillea", 
-            description: "Artificial tree Bougainvillea with yellow flowers",
+            description: "Artificial tree with yellow flowers",
             price: "899 kr", 
             image:Bougainvillea,
             count:1,
