@@ -1,8 +1,8 @@
 import React from 'react'
-import { CSSProperties } from '@material-ui/core/styles/withStyles'
-import MainFeaturedPost from "../components/backgroundImg"
+import { CSSProperties } from '@mui/styled-engine';
+import MainFeaturedPost from "../backgroundImg"
 import BI from "../images/backgroundImg.jpg"
-import ImgMediaCard from '../components/categoryCard'
+
 
 
 
@@ -16,10 +16,10 @@ const mainFeaturedPost = {
   linkText: 'Continue reading…',
 };
 
-const Home = () => {
+const Nav = () => {
   return (
     <><MainFeaturedPost post={mainFeaturedPost} />
-    <ImgMediaCard />
+ 
     </>
   )
 }
@@ -29,4 +29,4 @@ const Home = () => {
   justifyContent: "center",
 } */
 
-export default Home
+export default Nav

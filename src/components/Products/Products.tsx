@@ -1,30 +1,77 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import green from '../../images/green.jpg'
-import HibiscusImage from '../../images/HibiscusImage.jpg'
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import React, { useEffect, useState } from "react";
+import { useAppSelector, useAppDispatch } from "../../app/hooks";
+import { useSelector } from 'react-redux'
+import {CSSProperties }from 'react';
+import { ProductsState, receivedProducts } from "./productSlice";
+import { getProducts, Product } from "../../app/api";
+import styles from "./Products.module.css";
+import { addToCart } from "../cart/cartSlice";
+import {Link, useParams} from 'react-router-dom'
+import { connect, ConnectedProps, MapStateToProps, MapStateToPropsParam } from "react-redux";
+import { AppDispatch } from "../../app/store";
 
 
-interface Products {
-    id: number,
-    name: string,
-    description: string,
-    price: string,
-    image: string
+export function Products() {
+
+
+const dispatch = useAppDispatch();
+  useEffect(() => {
+    getProducts().then((products) => {
+      dispatch(receivedProducts(products));
+  });
+}, []);
+
+
+const getData = (id:string) =>{
+  let tempData = [id];
+ 
+  localStorage.setItem('items', JSON.stringify(tempData));
 }
-    
 
-const ProductList: Products[] = [
-    { id: 0, name: 'Shoes', description: 'Running shoes.', price: '$5', image: green },
-    { id: 1, name: 'Macbook', description: 'Apple macbook.', price: '$10', image: HibiscusImage },
-]
-export default function MediaCard() {
-    return (
-      <></>
-    );
+
+  const products = useAppSelector((state) => state.products.products)
+  return (
+ 
+    <main className="page">
+      <ul className={styles.products}>
+            
+        {Object.values(products).map((product) => (
+          
+          <li key={product.id}>
+        
+            <article className={styles.product}>
+              <figure>
+                <img style= {{width:300, height:400}} src={product.imageURL} alt={product.imageAlt} />
+
+              </figure>
+              <div>
+                <h1>{product.name}</h1>
+               
+                <p style={{fontSize:"1.5re"}}>{product.price} kr</p>
+                
+                <button style={buttonItem} onClick={() => dispatch(addToCart(product.id))}>Add to Cart 🛒</button>
+                <div>
+                <Link style={buttonItem} to={`/singleProduct/${product.id}`} > 
+                  <button style={buttonItem}  onClick={()=> getData(product.id)} >Readmore</button></Link> 
+                </div>
+              </div>
+            </article>
+          </li>
+          
+        ))}
+           
+      </ul>
+      
+    </main>
+   
+  );
+}
+const buttonItem: CSSProperties = {
+  display:'flex',
+  flex:"wrap",
+  fontSize:"1.5rem",
+  textDecoration:"none",
+  marginBottom:"30px",
+  cursor:"pointer",
+  textDecorationLine:"none",
   }

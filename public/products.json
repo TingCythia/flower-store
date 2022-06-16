@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "ETERNAL",
+    "price": 109,
+    "description": "Eternal roses are real roses that have been specially preserved allowing the delicate softness, fresh colour and natural beauty of the rose to last without maintenance for up to a year. ",
+    "imageURL": "../src/images/Bevess.jpg",
+    "imageAlt": "ETERNAL"
+  },
+  {
+    "id": "2",
+    "name": "CHIC",
+    "price": 99,
+    "description": "Planter boxes are used on impervious surfaces in highly urbanized areas to collect and detain / infiltrate rainfall and runoff. The boxes may be prefabricated or constructed in place and contain growing medium, plants, and a reservoir.",
+    "imageURL": "../src/images/ChicFlower.jpg",
+    "imageAlt": "CHIC"
+  },
+  {
+    "id": "3",
+    "name": "COCO FIORI",
+    "price": 349,
+    "description": "A fresh and lovely bouquet of flowers is a guaranteed way to put a smile on someone’s face. The challenge was to create an exclusive collection for local leader brand in premium flower brand Coco Fiori. The idea came exactly from exclusivity of this product.",
+    "imageURL": "../src/images/Coco Fiori.jpg",
+    "imageAlt": "COCO FIORI"
+  },
+  {
+    "id": "4",
+    "name": "EMERALD",
+    "price": 99,
+    "description": "An Emerald Gem Plant or Homalomena, native to tropical Asia and South America, is an upright plant with dark green, waxy, spade-shaped leaves. The short compact shape of an Emerald Gem Plant makes it ideal for areas with height restrictions. ",
+    "imageURL": "../src/images/EMERALD.jpg",
+    "imageAlt": "EMERALD"
+  },
+  {
+    "id": "5",
+    "name": "Bougainvillea",
+    "price": 200,
+    "description": "Bougainvillea spectabilis grows as a woody vine or shrub, reaching 15 to 40 feet (4.6 to 12.2 m)[with heart-shaped leaves and thorny, pubescent stems. The flowers are generally small, white, and inconspicuous, highlighted by several brightly colored modified leaves called bracts. ",
+    "imageURL":"../src/images/Bougainvillea.jpg",
+    "imageAlt": "Bougainvillea"
+  } ,
+  {
+    "id": "6",
+    "name": "Olea europaea",
+    "price": 202,
+    "description": "subtropical broad-leaved evergreen tree (family Oleaceae) and its edible fruit. The olive fruit and its oil are key elements in the cuisine of the Mediterranean and are popular outside the region. ",
+    "imageURL":"../src/images/OliveTräd.jpg",
+    "imageAlt": "Olea europaea"
+  },
+  {
+    "id": "7",
+    "name": "MONSTERA",
+    "price": 199,
+    "description": "plan deliciosa is mainly cultivated for its large, glossy, dark green leaves that can reach up to one metre in length. The edges of the juvenile leaves are unbroken, but as the plant matures the leaf edges become deeply cut and have elliptic holes in them. ",
+    "imageURL":"../src/images/Monstera Delociosa.jpg",
+    "imageAlt": "MONSTERA"
+  },
+  {
+    "id": "8",
+    "name": "CACTUS",
+    "price": 199,
+    "description": "is a type of desert plant that has thick, leafless stems covered in prickly spines or sharp spikes. Cactus plants are able to thrive in dry climates because they store water in their stems. Some large cactus varieties can store an impressive amount of water. ",
+    "imageURL":"../src/images/Kaktus.jpg",
+    "imageAlt": "CACTUS"
+  }
+]

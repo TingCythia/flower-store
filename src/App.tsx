@@ -1,45 +1,60 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from './pages/About'
-import Cart from './pages/Cart'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import Store from './pages/Store'
-import Footer from './components/Footer'
-import SingleProduct from './pages/singleProduct';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Products } from "./components/products/Products";
+import { CartLink } from "./components/cart/CartLink";
+import { Cart } from "./components/cart/Cart";
+import { singleProduct } from "./components/singleProduct/single";
+import styles from "./App.module.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
     <Router>
-      <Navbar/>   
+  <div className={styles.app}><Navbar /></div>
+
+  
+      
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="About" element={<About />} />
-        <Route path="Cart" element={<Cart />} />
-        <Route path="Contact" element={<Contact />} />
-        <Route path="Store" element={<Store />} />
-        <Route path=':id' element={<SingleProduct  />} />
+        <Route  path="/">
+        <Nav />
+        </Route> 
+        <Route path="/products">
+          <Products />
+        </Route>
+        <Route path="/Nav">
+          <Nav />
+        </Route>
+{/*      <Route path='/singleProduct/:id' element = {<singleProduct />} >
+       
+        </Route> */}
+        
+        <Route path="/cart">
+          <Cart />
+        </Route>
+        <Route path="/app-routes">
+      {/*   <AppRoutes /> */}
+        </Route>
+
       </Routes>
-      {/* <div className="App">
-        Hello World
-      </div> */}
-
-      <Footer />
-    
+      <div><Footer/> </div>
     </Router>
-      </>
-
-
-    
+  
   );
 }
 
-export default App
+export default App;
 
+/* function Home() {
+  return (
+    <main className="page">
+      <h1>Welcome to the Store</h1>
+      <figure>
+        <img src="/backgroundImg.jpg" alt="A large old storefront" width="800" />
 
+      </figure>
+    </main>
+  );
+} */
