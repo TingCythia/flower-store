@@ -9,7 +9,9 @@ import Home from './pages/Home'
 import Store from './pages/Store'
 import Footer from './components/Footer'
 import SingleProduct from './pages/singleProduct';
-
+import AddressForm from "./components/addressForm"
+import PaymentForm from "./components/payment"
+import Copyright from "./components/checkout"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,10 +27,10 @@ function App() {
         <Route path="Contact" element={<Contact />} />
         <Route path="Store" element={<Store />} />
         <Route path=':id' element={<SingleProduct  />} />
+        <Route path='address' element={<AddressForm  />} />
+        <Route path='payment' element={<PaymentForm  />} />
+        <Route path='checkout' element={<Copyright  />} />
       </Routes>
-      {/* <div className="App">
-        Hello World
-      </div> */}
 
       <Footer />
     
